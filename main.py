@@ -72,7 +72,7 @@ def getIdFromPath(path):
 def getIdFromName(name):
   try:
     id = name.rsplit(".", 1)[0]
-    id = name.rsplit(" ", 1)[1]
+    id = id.rsplit(" ", 1)[1]
     return id
   except:
     return name
